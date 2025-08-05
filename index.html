@@ -4,118 +4,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="IzaacCoding36">
-    <meta name="description" content="Esse é um site onde eu (IzaacCoding36) mostro os meus objetivos pessoais mais importantes.">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Desenvolvimento, Website">
-    <title>Meus objetivos</title>
+    <meta name="description" content="Esse é um site onde eu (IzaacCoding36) mostro os meus objetivos pessoais mais importantes com contadores de tempo em tempo real.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Desenvolvimento, Website, Objetivos, Metas">
+    <title>Meus Objetivos | Acompanhamento de Metas</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="Image/jpg" href="img/favicon.ico">
-  <base href="index.html">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <base href="index.html">
 </head>
 
 <body>
-    <section class="conteudo-principal">
-        <h2 class="titulo-principal">Meus objetivos:<span>_</span></h2>
-        <div class="conteudo">
-            <div class="botoes">
-                <button class="botao ativo">Finalizar a faculdade</button>
-                <button class="botao">Alura</button>
-                <button class="botao">Desenvolver novos documentos</button>
-                <button class="botao">Arrumar um trabalho</button>
-            </div>
+    <main class="conteudo-principal">
+        <header>
+            <h1 class="titulo-principal">Meus Objetivos<span>_</span></h1>
+        </header>
+        
+        <section class="conteudo">
+            <nav class="botoes" role="tablist" aria-label="Navegação de objetivos">
+                <button class="botao ativo" role="tab" aria-selected="true" aria-controls="objetivo-1" id="tab-1">Finalizar a faculdade</button>
+                <button class="botao" role="tab" aria-selected="false" aria-controls="objetivo-2" id="tab-2">Alura</button>
+                <button class="botao" role="tab" aria-selected="false" aria-controls="objetivo-3" id="tab-3">Desenvolver novos documentos</button>
+                <button class="botao" role="tab" aria-selected="false" aria-controls="objetivo-4" id="tab-4">Arrumar um trabalho</button>
+            </nav>
+            
             <div class="abas-textos">
-                <div class="aba-conteudo ativo">
-                    <h3 class="aba-conteudo-titulo-principal">Finalizar a faculdade e receber o diploma de conclusão</h3>
-                    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo:</h4>
-                    <div class="contador">
+                <article class="aba-conteudo ativo" role="tabpanel" id="objetivo-1" aria-labelledby="tab-1">
+                    <h2 class="aba-conteudo-titulo-principal">Finalizar a faculdade e receber o diploma de conclusão</h2>
+                    <h3 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo:</h3>
+                    <div class="contador" role="timer" aria-live="polite" aria-label="Contador regressivo para finalizar a faculdade">
                         <div class="contador-digito">
-                            <p class="contador-digito-numero" id="dias0"></p>
+                            <p class="contador-digito-numero" id="dias0" aria-label="Dias restantes">0</p>
                             <p class="contador-digito-texto">dias</p>
                         </div>
                         <div class="contador-digito">
-                            <p class="contador-digito-numero" id="horas0"></p>
+                            <p class="contador-digito-numero" id="horas0" aria-label="Horas restantes">0</p>
                             <p class="contador-digito-texto">horas</p>
                         </div>
                         <div class="contador-digito">
-                            <p class="contador-digito-numero" id="min0"></p>
+                            <p class="contador-digito-numero" id="min0" aria-label="Minutos restantes">0</p>
                             <p class="contador-digito-texto">min</p>
                         </div>
                         <div class="contador-digito">
-                            <p class="contador-digito-numero" id="seg0"></p>
+                            <p class="contador-digito-numero" id="seg0" aria-label="Segundos restantes">0</p>
                             <p class="contador-digito-texto">seg</p>
                         </div>
                     </div>
-                </div>
-                <div class="aba-conteudo">
-                    <h3 class="aba-conteudo-titulo-principal">Realizar cursos da Alura</h3>
-                    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo:</h4>
-                    <div class="contador">
+                </article>
+                
+                <article class="aba-conteudo" role="tabpanel" id="objetivo-2" aria-labelledby="tab-2">
+                    <h2 class="aba-conteudo-titulo-principal">Realizar cursos da Alura</h2>
+                    <h3 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo:</h3>
+                    <div class="contador" role="timer" aria-live="polite" aria-label="Contador regressivo para cursos da Alura">
                         <div class="contador-digito">
-                            <p class="contador-digito-numero" id="dias1"></p>
+                            <p class="contador-digito-numero" id="dias1" aria-label="Dias restantes">0</p>
                             <p class="contador-digito-texto">dias</p>
                         </div>
                         <div class="contador-digito">
-                            <p class="contador-digito-numero" id="horas1"></p>
+                            <p class="contador-digito-numero" id="horas1" aria-label="Horas restantes">0</p>
                             <p class="contador-digito-texto">horas</p>
                         </div>
                         <div class="contador-digito">
-                            <p class="contador-digito-numero" id="min1"></p>
+                            <p class="contador-digito-numero" id="min1" aria-label="Minutos restantes">0</p>
                             <p class="contador-digito-texto">min</p>
                         </div>
                         <div class="contador-digito">
-                            <p class="contador-digito-numero" id="seg1"></p>
+                            <p class="contador-digito-numero" id="seg1" aria-label="Segundos restantes">0</p>
                             <p class="contador-digito-texto">seg</p>
                         </div>
                     </div>
-                </div>
-                <div class="aba-conteudo">
-                    <h3 class="aba-conteudo-titulo-principal">Realizar documentos necessários</h3>
-                    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo:</h4>
-                    <div class="contador">
+                </article>
+                
+                <article class="aba-conteudo" role="tabpanel" id="objetivo-3" aria-labelledby="tab-3">
+                    <h2 class="aba-conteudo-titulo-principal">Realizar documentos necessários</h2>
+                    <h3 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo:</h3>
+                    <div class="contador" role="timer" aria-live="polite" aria-label="Contador regressivo para documentos">
                         <div class="contador-digito">
-                            <p class="contador-digito-numero" id="dias2"></p>
+                            <p class="contador-digito-numero" id="dias2" aria-label="Dias restantes">0</p>
                             <p class="contador-digito-texto">dias</p>
                         </div>
                         <div class="contador-digito">
-                            <p class="contador-digito-numero" id="horas2"></p>
+                            <p class="contador-digito-numero" id="horas2" aria-label="Horas restantes">0</p>
                             <p class="contador-digito-texto">horas</p>
                         </div>
                         <div class="contador-digito">
-                            <p class="contador-digito-numero" id="min2"></p>
+                            <p class="contador-digito-numero" id="min2" aria-label="Minutos restantes">0</p>
                             <p class="contador-digito-texto">min</p>
                         </div>
                         <div class="contador-digito">
-                            <p class="contador-digito-numero" id="seg2"></p>
+                            <p class="contador-digito-numero" id="seg2" aria-label="Segundos restantes">0</p>
                             <p class="contador-digito-texto">seg</p>
                         </div>
                     </div>
-                </div>
-                <div class="aba-conteudo">
-                    <h3 class="aba-conteudo-titulo-principal">Arrumar um emprego na área desejada com uma remuneração adequada</h3>
-                    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo:</h4>
-                    <div class="contador">
+                </article>
+                
+                <article class="aba-conteudo" role="tabpanel" id="objetivo-4" aria-labelledby="tab-4">
+                    <h2 class="aba-conteudo-titulo-principal">Arrumar um emprego na área desejada com uma remuneração adequada</h2>
+                    <h3 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo:</h3>
+                    <div class="contador" role="timer" aria-live="polite" aria-label="Contador regressivo para emprego">
                         <div class="contador-digito">
-                            <p class="contador-digito-numero" id="dias3"></p>
+                            <p class="contador-digito-numero" id="dias3" aria-label="Dias restantes">0</p>
                             <p class="contador-digito-texto">dias</p>
                         </div>
                         <div class="contador-digito">
-                            <p class="contador-digito-numero" id="horas3"></p>
+                            <p class="contador-digito-numero" id="horas3" aria-label="Horas restantes">0</p>
                             <p class="contador-digito-texto">horas</p>
                         </div>
                         <div class="contador-digito">
-                            <p class="contador-digito-numero" id="min3"></p>
+                            <p class="contador-digito-numero" id="min3" aria-label="Minutos restantes">0</p>
                             <p class="contador-digito-texto">min</p>
                         </div>
                         <div class="contador-digito">
-                            <p class="contador-digito-numero" id="seg3"></p>
+                            <p class="contador-digito-numero" id="seg3" aria-label="Segundos restantes">0</p>
                             <p class="contador-digito-texto">seg</p>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <script src="main.js"></script>
 </body>
 
