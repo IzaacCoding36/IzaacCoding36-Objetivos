@@ -29,6 +29,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: var(--cor-de-fundo);
 }
 
 body {
@@ -304,6 +305,7 @@ body::before {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
