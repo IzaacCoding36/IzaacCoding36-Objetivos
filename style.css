@@ -29,7 +29,7 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: var(--cor-de-fundo);
+    background: var(--cor-de-fundo);
 }
 
 body {
@@ -377,3 +377,4 @@ body::before {
     outline: 2px solid var(--verde-primario);
     outline-offset: 2px;
 }
+
